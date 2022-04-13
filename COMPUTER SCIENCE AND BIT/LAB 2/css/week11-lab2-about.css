@@ -1,0 +1,166 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0px;
+    background-image: url(image/MBHS2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 176, 194);
+    
+}
+
+nav .left .logo img {
+    width:150px;
+    height:100px;
+    /* background-color: blue; */
+}
+nav .right{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav .right ul {
+    list-style: none;
+}
+
+nav .right ul li{
+    display: inline-block;
+}
+
+nav .right ul li a,nav .right ul li span{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+nav .right ul li .register{
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background-color: rgb(40, 111, 119);
+}
+
+nav .right ul li .register ul { padding: 0;}
+
+nav .right ul li .register ul .year{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    margin-top: 15px;
+}
+nav .right ul li .register ul li a{
+    margin-left: auto;
+    margin-right: auto; 
+}
+nav .right ul li .register ul li {
+    display: block;
+}
+
+nav .right ul > li :hover{
+    color: rgb(71, 162, 172);
+}
+
+nav .right ul li span:hover +.register, nav .right ul li .register:hover{
+    display: block;
+}
+
+nav .right ul > li :hover{
+    color: rgb(71, 162, 172);
+}
+
+nav .right ul li span:hover +.register, nav .right ul li .register:hover{
+    display: block;
+}
+
+main{
+    /* background-color: red; */
+    background-image: url("https://pbs.twimg.com/media/E_OkT8iXMAEfNLR?format=jpg&name=4096x4096");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-color: rgba(33, 37, 39, 0.7);
+    background-blend-mode: soft-light;
+}
+
+main h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .btn{
+    text-align: center;
+    margin-top: 250px;
+    border: none;
+}
+
+main .btn button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(11, 97, 106);
+}
+
+main .btn button a{
+    text-decoration: none;
+    color: rgb(250, 245, 245);
+    font-weight: bold;
+}
+@media only screen and (max-width:407px) {
+    nav{
+        justify-self: normal;
+    }
+    nav .right ul li {
+        display: block;
+        margin-top: 5px;
+    }   
+    
+}
+@media only screen and (min-width:700px) {
+    nav .right ul li a,nav .right ul li span{
+        font-size: 20px;
+        margin-right: 40px;
+    }
+    main h1{
+        font-size: 50px;
+    }
+    main .btn{
+        margin-top: 350px;
+    }
+    main .btn button{
+        width: 150px;
+        height: 70px;
+    }
+    main .btn button:hover{
+        background-color: rgb(34, 192, 209);
+        width: 160px;
+        height: 70px;
+    }
+
+    main .btn button a{
+        font-size: 18px;
+    }
+}
+
+
+
